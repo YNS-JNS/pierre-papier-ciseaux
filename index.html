@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            background-color: darkgrey;
+            height: 60vh;
+            min-width: 600px;
+            padding: 10px;
+        }
+
+        .choice {
+            width: 100px;
+            height: 60px;
+            border: 2px solid black;
+            border-radius: 2px;
+            padding: 5px;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .choice:hover{
+            cursor: pointer;
+            background-color: rgb(121, 113, 113);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Rock, Paper and SCissors</h1>
+    <div class="container">
+        <div class="choice" onclick="play('rock')">Rock</div>
+        <div class="choice" onclick="play('paper')">Paper</div>
+        <div class="choice" onclick="play('scissors')">Scissors</div>
+    </div>
+    <div class="result"></div>
+
+    <script>
+
+        const result = document.querySelector('result');
+        const choices = ['rock', 'paper', 'scissors'];
+
+        const play = (userChoice) => {
+            const choiceComputer = Math.floor(Math.random() * choices.length)
+            // console.log(choices[choiceComputer])
+        }
+
+    </script>
+</body>
+
+</html>
